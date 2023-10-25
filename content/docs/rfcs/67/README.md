@@ -15,7 +15,7 @@ Status is a chat application which has several features, including, but not limi
 - Private 1:1 chats, described by [55/STATUS-1TO1-CHAT](/spec/55)
 - Large scale group chats, described by [56/STATUS-COMMUNITIES](/spec/56)
 
-This document aims to explain how a Status client implementation SHOULD make use of the underlying infrastructure, 
+This document aims to specify how a Status client implementation SHOULD make use of the underlying infrastructure, 
 Waku, which is described in [10/WAKU2](/spec/10).
 
 # Background 
@@ -124,6 +124,20 @@ When a Status Client is publishing a message,
 it MUST check if Light mode is enabled,
 and if so, it MUST publish the message via `LIGHTPUSH`.
 
+## 5. `DISCOVERY`
+
+> Note: This protocol MUST be supported by Light clients and Full clients
+
+Status Clients SHOULD make use of the following peer discovery methods that are provided by Waku,
+such as -
+
+1. [EIP-1459: DNS-Based Discovery](https://eips.ethereum.org/EIPS/eip-1459)
+2. [33/WAKU2-DISCV5](/spec/33)
+3. [34/WAKU2-PEER-EXCHANGE](/spec/34)
+
+Status Clients MAY use any combination of the above peer discovery methods, 
+which is suited best for their implementation.
+
 # Security/Privacy Considerations
 
 This specification inherits the security and privacy considerations from the following specifications -
@@ -138,6 +152,9 @@ This specification inherits the security and privacy considerations from the fol
 8. [55/STATUS-1TO1-CHAT](/spec/55)
 9. [56/STATUS-COMMUNITIES](/spec/56)
 10. [62/STATUS-PAYLOAD](/spec/62)
+11. [EIP-1459: DNS-Based Discovery](https://eips.ethereum.org/EIPS/eip-1459)
+12. [33/WAKU2-DISCV5](/spec/33)
+13. [34/WAKU2-PEER-EXCHANGE](/spec/34)
 
 # Copyright
 
@@ -159,5 +176,7 @@ Copyright and related rights waived via [CC0](https://creativecommons.org/public
 - [55/STATUS-1TO1-CHAT](/spec/55)
 - [56/STATUS-COMMUNITIES](/spec/56)
 - [62/STATUS-PAYLOAD](/spec/62)
+- [33/WAKU2-DISCV5](/spec/33)
+- [34/WAKU2-PEER-EXCHANGE](/spec/34)
 
 
