@@ -4,7 +4,7 @@ title: 1/COSS
 name: Consensus-Oriented Specification System
 status: draft
 category: Best Current Practice
-editor: Oskar Thoren <oskar@status.im>
+editor: Jimmy Debe <jimmy@status.im>
 contributors:
   - Pieter Hintjens <ph@imatix.com>
   - André Rebentisch <andre@openstandards.de>
@@ -22,7 +22,7 @@ It is equivalent except for some areas:
 
 - recommending the use of a permissive licenses, such as CC0 (with the exception of this document);
 - miscellaneous metadata, editor, and format/link updates;
-- more inheritance from the [IETF Standards Process][https://www.rfc-editor.org/rfc/rfc2026.txt],
+- more inheritance from the [IETF Standards Process](https://www.rfc-editor.org/rfc/rfc2026.txt),
   e.g. using RFC categories: Standards Track, Informational, and Best Common Practice;
 - standards track specifications SHOULD follow a specific structure that both streamlines editing,
   and helps implementers to quickly comprehend the specification
@@ -104,7 +104,7 @@ Every specification has an independent lifecycle that documents clearly its curr
 
 A specification has six possible states that reflect its maturity and contractual weight:
 
-![Lifecycle diagram](../../../../rfcs/1/lifecycle.png)
+![Lifecycle diagram](../../../../static/rfcs/1/lifecycle.png)
 
 ### Raw Specifications
 
