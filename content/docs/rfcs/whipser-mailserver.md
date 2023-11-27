@@ -113,3 +113,7 @@ the recipient is vulnerable to DoS attacks from a malicious `Mailserver` node.
 
 # Copyright
 Copyright and related rights waived via CC0.
+
+# References
+1. [4/WHISPER-MAILSERVER (Original Specification)](https://github.com/status-im/specs/blob/master/docs/spec/4-whisper-mailserver.md)
+
