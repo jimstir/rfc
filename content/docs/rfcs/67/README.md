@@ -6,7 +6,7 @@ status: raw
 category: Standards Track
 tags: an optional list of tags, not standard
 editor: Aaryamann Challani <aaryamann@status.im>
-contributors:
+contributors: Aaryamann Challani <aaryamann@status.im>
 ---
 
 # Abstract
