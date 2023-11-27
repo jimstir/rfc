@@ -110,3 +110,6 @@ the recipient is vulnerable to DoS attacks from a malicious `Mailserver` node.
 # Copyright
 Copyright and related rights waived via CC0.
 
+# References
+1. [11/WAKU-MAILSERVER (Original Specification)](https://github.com/status-im/specs/blob/master/docs/spec/11-waku-mailserver.md)
+
