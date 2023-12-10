@@ -1,6 +1,6 @@
 ---
 slug: 15
-title: 15/WAKU-BRIDGE
+title: 
 name: Waku Bridge
 status: draft
 tags: waku-core
