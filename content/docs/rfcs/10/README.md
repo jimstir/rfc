@@ -13,8 +13,7 @@ contributors:
 
 ## Abstract
 
-Waku v2 is family of modular peer-to-peer protocols for secure communication.
-The protocols are designed to be secure, privacy-preserving, censorship-resistant and being able to run in resource restricted environments.
+Waku v2 is family of modular peer-to-peer protocols for secure communication.rving, censorship-resistant and being able to run in resource restricted environments.
 At a high level, it implements Pub/Sub over [libp2p](https://github.com/libp2p/specs) and adds a set of capabilities to it.
 These capabilities are things such as:
 (i) retrieving historical messages for mostly-offline devices
