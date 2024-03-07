@@ -11,6 +11,12 @@ contributors:
 ---
 
 # Abstract
+
+
+
+
+
+
 This specification provides a set of methods that allow clients to use push notification services in mobile environments.
 
 # Background
