@@ -26,11 +26,16 @@ previous versions: [00](/spec/12/previous-versions/00/)
 - _filter-push_: `/vac/waku/filter-push/2.0.0-beta1`
 
 Content filtering is a way to do [message-based
-filtering](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern#Message_filtering).
+filtering](ht.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern#Message_filtering).
 Currently the only content filter being applied is on `contentTopic`. This
 corresponds to topics in Waku v1.
 
 ## Rationale
+
+
+
+
+
 
 Unlike the `store` protocol for historical messages, this protocol allows for
 native lower latency scenarios such as instant messaging. It is thus
