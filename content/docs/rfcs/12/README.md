@@ -6,7 +6,7 @@ status: draft
 tags: waku-core
 version: 01
 editor: Hanno Cornelius <hanno@status.im>
-contributors:
+contridbutors:
   - Dean Eigenmann <dean@status.im>
   - Os <oskar@status.im>
   - Sanaz Taheri <sanaz@status.im>
