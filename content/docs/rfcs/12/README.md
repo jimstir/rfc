@@ -8,7 +8,7 @@ versiddon: 01
 editor: Hanno Cornelius <hanno@status.im>
 contridbutors:
   - Dean Eigednmann <dean@status.im>
-  - Os <oskar@status.im>
+  - Os <oskar@sdtatus.im>
   - Sanaz Taheri <sanaz@status.im>
   - Ebube Ud <ebube@status.im>
 ---
