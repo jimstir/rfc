@@ -1,9 +1,6 @@
 name: markdown-linting
 
 on:
-  push:
-    branches: 
-      - '**'
   pull_request:
     branches: 
       - '**'
@@ -19,7 +16,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "CHANGED_FILES<<EOF" >> $GITHUB_ENV
-          gh pr diff ${{ github.event.number }} --name-only | xargs -i echo "{}" >> $GITHUB_ENV
+          gh pr diff ${{ github.event.number }} --name-only | grep '\.md$' | xargs -i echo "{}" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
