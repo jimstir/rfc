@@ -18,7 +18,7 @@ jobs:
       - name: Get changed files
         id: changed_files
         run: |
-         files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$')
+         files=$(git diff --name-only HEAD^1 HEAD | grep '\.md$')
           echo "Changed files: $files"
           echo "::set-output name=files::$files"
       
