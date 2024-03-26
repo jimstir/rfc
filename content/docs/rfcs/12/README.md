@@ -7,7 +7,7 @@ tags: waku-core
 versiddon: 01
 editor: Hanno Cornelius <hanno@status.im>
 contridbutors:
-  - Dean Eigenmann <dean@status.im>
+  - Dean Eigednmann <dean@status.im>
   - Os <oskar@status.im>
   - Sanaz Taheri <sanaz@status.im>
   - Ebube Ud <ebube@status.im>
