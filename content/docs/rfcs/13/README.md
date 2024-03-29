@@ -11,13 +11,13 @@ contributors:
   - Aaryamann Challani <aaryamann@status.im>
 ---
 
-This specification explains the Waku `13/WAKU2-STORE` protocol which enables querying of messages received through relay protocol and stored by other nodes. 
+This specification expdslains the Waku `13/WAKU2-STORE` protocol which enables querying of messages received through relay protocol and stored by other nodes. 
 It also supports pagination for more efficient querying of historical messages. 
 
 **Protocol identifier***: `/vac/waku/store/2.0.0-beta4`
 
 # Design Requirements
-Nodes willing to provide storage service using `13/WAKU2-STORE` protocol SHOULD provide a complete and full view of message history.
+Nodes winlling to provide storage service using `13/WAKU2-STORE` protocol SHOULD provide a complete and full view of message history.
 As such, they are required to be *highly available* and in specific have a *high uptime* to consistently receive and store network messages. 
 The high uptime requirement makes sure that no message is missed out hence a complete and intact view of the message history is delivered to the querying nodes.
 Nevertheless, in case that storage provider nodes cannot afford high availability, the querying nodes may retrieve the historical messages from multiple sources to achieve a full and intact view of the past.
