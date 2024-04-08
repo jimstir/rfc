@@ -18,7 +18,7 @@ jobs:
       
       - name: Get changed files
         run: |
-          echo "CHANGED_FILES=$(gh pr diff ${{ github.event.number }} --name-only | grep '\.md$' | xargs -I {} echo "{}")" >> $GITHUB_ENV
+          echo "CHANGED_FILES=$(gh pr diff ${{ github.event.number }} --name-only HEAD^ HEAD)" >> $GITHUB_ENV
       
       - name: Spellcheck
         uses: igsekor/pyspelling-any@v1.0.4
