@@ -1,0 +1,27 @@
+# This is workflow for spell checking using PySpelling lib (https://pypi.org/project/pyspelling/)
+name: Spellcheck
+
+on:
+  push:
+    branches: 
+      - '**'
+  pull_request:
+    branches: 
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Get changed files
+        run: |
+          echo "CHANGED_FILES=$(gh pr diff ${{ github.event.number }} --name-only | grep '\.md$' | xargs -I {} echo "{}")" >> $GITHUB_ENV
+      
+      - name: Spellcheck
+        uses: igsekor/pyspelling-any@v1.0.4
+        env:
+          MATRIX: ${{ toJson(env.CHANGED_FILES) }}
+          
