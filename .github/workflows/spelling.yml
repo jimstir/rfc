@@ -22,7 +22,8 @@ jobs:
       
       - name: List files
         run: |
-          echo ${{ env.CHANGED_FILES }}
+          echo "${{ env.CHANGED_FILES }}"
+          
       - name: Spellcheck
         uses: igsekor/pyspelling-any@v1.0.4
         env:
