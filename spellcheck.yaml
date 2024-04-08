@@ -1,4 +1,4 @@
 matrix:
 - name: markdown
   sources:
-  - '**/*.md'
+  - ${{env.CHANGED_FILES}}
