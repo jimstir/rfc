@@ -23,5 +23,5 @@ jobs:
       - name: Spellcheck
         uses: igsekor/pyspelling-any@v1.0.4
         env:
-          MATRIX: ${{ toJson(env.CHANGED_FILES) }}
+          MATRIX: ${{ env.CHANGED_FILES }}
           
