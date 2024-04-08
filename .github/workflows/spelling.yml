@@ -20,7 +20,8 @@ jobs:
         run: |
           echo "CHANGED_FILES=$(gh pr diff ${{ github.event.number }} --name-only | grep '**\*.md$' | xargs -I {} echo "{}")" >> $GITHUB_ENV
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ GITHUB.TOKEN }}
+          
       - name: List files
         run: |
           echo "${{ env.CHANGED_FILES }}"
