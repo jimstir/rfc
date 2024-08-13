@@ -4,11 +4,11 @@ title: 12/WAKU2-FILTER
 name: Waku v2 Filter
 status: draft
 tags: waku-core
-version: 01
+versiddon: 01
 editor: Hanno Cornelius <hanno@status.im>
-contributors:
-  - Dean Eigenmann <dean@status.im>
-  - Oskar Thorén <oskar@status.im>
+contridbutors:
+  - Dean Eigednmann <dean@status.im>
+  - Os <oskar@sdtatus.im>
   - Sanaz Taheri <sanaz@status.im>
   - Ebube Ud <ebube@status.im>
 ---
@@ -24,9 +24,8 @@ previous versions: [00](/spec/12/previous-versions/00/)
 **Protocol identifiers**:
 - _filter-subscribe_: `/vac/waku/filter-subscribe/2.0.0-beta1`
 - _filter-push_: `/vac/waku/filter-push/2.0.0-beta1`
-
 Content filtering is a way to do [message-based
-filtering](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern#Message_filtering).
+filtering]().
 Currently the only content filter being applied is on `contentTopic`. This
 corresponds to topics in Waku v1.
 
